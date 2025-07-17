@@ -1,17 +1,13 @@
 @media screen and (min-width:640px) {
-    h1{
-        font-size: 50px;
-        margin: 5%;
-    }
+
+    #hmenu { 
+		display: none;
+	}
 
     nav ul{
         display: flex;
         justify-content: space-around;
     }
-
-    #hmenu { 
-		display: none;
-	}
 
 	.navi {
 		flex-direction: row;
@@ -25,6 +21,10 @@
     nav {
         grid-template-columns: 1fr;
     }
+
+    nav ul {
+    overflow: visible;
+    } 
 
     
 /* <----------------------------------------------------------> */
@@ -44,17 +44,16 @@
         grid-column: 1/2;
     }
 
+    .card1 p{
+        font-size: x-large;
+    }
+
     .card2 {
         grid-column: 2/3;
     }
 
 
 /* <----------------------------------------------------------> */
-
-
-    #last-modi, footer p {
-        padding: 1pc;
-    }
 
     footer img {
     width: 5%;
