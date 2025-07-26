@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="W05 Assignment: Product Review Form">
+    <meta name="author" content="Erick Bravo">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon_art.png">   
+  <title>CreArte Workshop</title>
+</head>
+<body onload="myFunction()">
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">    
+    <header>
+        <div class="header-logo">
+            <img src="images/logo_crearte.png" alt="Logo-Crearte" loading="lazy">
+        </div>
+        <button class="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html"class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="gallery">
+            <div class="gallery-item img1"><img src="images/artWH1.webp" alt="artWH1" loading="lazy"></div>
+            <div class="gallery-item img2"><img src="images/artWL1.webp" alt="artWL1" loading="lazy"></div>
+            <div class="gallery-item img3"><img src="images/artWH2.webp" alt="artWH2" loading="lazy"></div>
+            <div class="gallery-item text-box text1">Unleash your creativity, one brushstroke at a time.</div>
+    
+            <div class="gallery-item text-box text2">In this space, your imagination comes to life.</div>
+            <div class="gallery-item img4"><img src="images/artWL2.webp" alt="artWL2" loading="lazy"></div>
+            <div class="gallery-item img5"><img src="images/artWH3.webp" alt="artWH3" loading="lazy"></div>
+            <div class="gallery-item img6"><img src="images/artWL3.webp" alt="artWL3" loading="lazy"></div>
+    
+            <div class="gallery-item img7"><img src="images/artWH4.webp" alt="artWH4" loading="lazy"></div>
+            <div class="gallery-item img8"><img src="images/artWL4.webp" alt="artWL4" loading="lazy"></div>
+            <div class="gallery-item img9"><img src="images/artWH5.webp" alt="artWH5" loading="lazy"></div>
+            <div class="gallery-item text-box text3">Turn your passion into a masterpiece.</div>
+        </div>
+              
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-sections">
+                <div class="contacto">
+                    <h3>Contact Us</h3>
+                    <p>📍 P.Icaza entre Boyaca y Garcia Avilez</p>
+                    <p>📍 Edificio Cimera, Dep 402</p>
+                    <p>📞 (+593) 099 154 0848</p>
+                    <p>📞 (+593) 099 287 9705</p>
+                    <p>📧 <a href="mailto:admtallercrearte@gmail.com">admtallercrearte@gmail.com</a></p>
+                    <p>🕒 Lunes a Viernes: 08:00 - 17:00</p>
+
+                    <h3>Social Media</h3>
+                    <div class="social-icons">
+                        <a class="icons" href="https://www.facebook.com/elacolettecom"><i class="bi bi-facebook"></i></a>
+                        <a class="icons" href="https://www.instagram.com/tallercrearte_ec/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>          
+
+                <div class="ubicacion">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d498.3629884384572!2d-79.88423408714854!3d-2.190095462883372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1739980313060!5m2!1sen!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                </div>
+
+            <div class="footer-bottom">
+            </div>
+        </div>
+
+
+        <p>@<span id="currentyear"></span> 👾 Erick Enrique Bravo 👾 Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</div>    
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+</body>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</html>

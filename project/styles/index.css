@@ -1,0 +1,278 @@
+:root{
+    --primary-color: #3E3A72   ;
+    --secondary-color: #7ED2B5 ;
+    --blanco: #FFF;
+    --negro: #000;
+
+    --heading-font: "DM Serif Display";
+    --paragraph-font: "Inter";
+}
+
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: var(--paragraph-font);
+}
+
+header,
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* header */
+
+.menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--secondary-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu::before{
+    content: "☰";
+}
+
+.menu.open::before{
+    content: "❌";
+}
+
+header{
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+}
+
+header,
+main{
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    display: none;
+    text-align: center;
+    font-size: larger;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.open a {
+	display: block;
+}
+
+.active::before{
+    content:"👩🏻‍🎨";
+}
+
+.header-logo img {
+    width: 5rem;
+}
+
+/* main */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    padding: 5%;
+}
+
+.text-content {
+    width: 25%;
+    padding-top: 9rem;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.text-content p {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #3E3A72;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #7ED2B5;
+}
+
+.image-container {
+    width: 65%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .text-content {
+            width: 100%;
+        }
+        .image-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+}
+
+/* footer */
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-sections div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+h3 {
+    color: #fff;
+    padding: 1rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.ubicacion iframe {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 10px;
+}
+
+.icons{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.social-icons a {
+ color: var(--secondary-color);
+}
+
+/* <----------------TEST------------------------> */
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--primary-color);
+    border-right: 16px solid var(--secondary-color);
+    border-bottom: 16px solid var(--primary-color);
+    border-left: 16px solid var(--secondary-color);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+  
+  
+  
+  
+

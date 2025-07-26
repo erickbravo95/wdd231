@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Corporación Favorita",
+    "address": "Av. Juan Tanca Marengo, Guayaquil, Ecuador",
+    "phone": "+593 4 370-3000",
+    "website": "https://www.corporacionfavorita.com/",
+    "image": "images/resized_CF.png",
+    "membershipLevel": 3,
+    "category": "Retail"
+  },
+  {
+    "name": "Banco del Pacífico",
+    "address": "Av. 9 de Octubre y Pedro Carbo, Guayaquil, Ecuador",
+    "phone": "+593 4 373-1500",
+    "website": "https://www.bancodelpacifico.com/personas/inicio",
+    "image": "images/resized_bp.png",
+    "membershipLevel": 3,
+    "category": "Banking"
+  },
+  {
+    "name": "La Fabril",
+    "address": "Km 20 Vía a Daule, Guayaquil, Ecuador",
+    "phone": "+593 4 600-7000",
+    "website": "https://www.lafabril.com.ec/",
+    "image": "images/resized_fabril.png",
+    "membershipLevel": 2,
+    "category": "Manufacturing"
+  },
+  {
+    "name": "Tonicorp",
+    "address": "Av. Carlos Julio Arosemena, Guayaquil, Ecuador",
+    "phone": "+593 4 370-3700",
+    "website": "https://www.tonicorp.com/",
+    "image": "images/resized_toni.png",
+    "membershipLevel": 1,
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "KFC Ecuador",
+    "address": "Mall del Sol, Guayaquil, Ecuador",
+    "phone": "+593 4 269-1800",
+    "website": "https://www.kfc.com.ec/",
+    "image": "images/resized_kfc.png",
+    "membershipLevel": 2,
+    "category": "Restaurant"
+  },
+  {
+    "name": "TVentas",
+    "address": "Av. Francisco de Orellana, Guayaquil, Ecuador",
+    "phone": "+593 4 600-7200",
+    "website": "https://www.tventas.com/",
+    "image": "images/resized_TVentas.png",
+    "membershipLevel": 1,
+    "category": "E-commerce"
+  },
+  {
+    "name": "Avianca Ecuador",
+    "address": "Aeropuerto José Joaquín de Olmedo, Guayaquil, Ecuador",
+    "phone": "+593 1800 003 434",
+    "website": "https://www.avianca.com/es/",
+    "image": "images/resized_Avianca.png",
+    "membershipLevel": 3,
+    "category": "Airline"
+  }
+]
+
+

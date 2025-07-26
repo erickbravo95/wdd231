@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The Chamber of Commerce Project">
+    <meta name="author" content="Erick Bravo">
+    <meta property="og:title" content="WDD 231 Class Website"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://images.unsplash.com/photo-1628004566999-83b23fdc411f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3VheWFxdWlsfGVufDB8fDB8fHww&w=1000&q=80"/>
+    <meta property="og:url" content="https://erickbravo95.github.io/wdd231/"/>
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/chamber_favicon.ico">
+  <title>Directory</title>
+</head>
+
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">   
+
+        <header class="navbar">
+            <div class="logo-left">
+                <img src="images/Logo-CCG-white.png" alt="Logo CCG">
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <h2>Business Directory</h2>
+
+            <div class="view-toggle">
+            <button id="grid-btn">🔲 Grid</button>
+            <button id="list-btn">📃 List</button>
+            </div>
+
+            <div id="members-container" class="grid"></div>
+                
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                <strong>Guayaquil  Chamber of Commerce</strong><br>
+                Av. Francisco de Orellana y<br>
+                Miguel H. Alcívar, Edificio Las<br>
+                Cámaras, Torre A, Pisos 2 y 3<br>
+                Guayaquil - Ecuador<br>
+                info@lacamara.org<br>
+                +593 4 2596100
+                </div>
+
+                <div class="footer-center">
+                <a href="https://www.youtube.com/@lacamaragye" aria-label="YouTube"><img src="images/icons8-youtube.svg" alt="YouTube"></a>
+                <a href="https://x.com/lacamaragye" aria-label="X"><img src="images/icons8-x.svg" alt="X"></a>
+                <a href="https://www.linkedin.com/company/lacamaragye/" aria-label="LinkedIn"><img src="images/icons8-linkedin.svg" alt="LinkedIn"></a>
+                </div>
+                
+                <div class="footer-right">
+                WDD231 Class Project<br>
+                Erick E. Bravo<br>
+                <p>@<span id="currentyear"></span> Guayaquil  Chamber of Commerce</p><br>
+                <p id="lastModified"></p>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>    
+
+        <script>
+            var myVar;
+            
+            function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+            }
+            
+            function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+
+</body>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    
+</html>
