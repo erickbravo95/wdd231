@@ -4,7 +4,7 @@
     "address": "Av. Juan Tanca Marengo, Guayaquil, Ecuador",
     "phone": "+593 4 370-3000",
     "website": "https://www.corporacionfavorita.com/",
-    "image": "images/resized_CF.png",
+    "image": "images/resized_cf.png",
     "membershipLevel": 3,
     "category": "Retail"
   },
@@ -49,7 +49,7 @@
     "address": "Av. Francisco de Orellana, Guayaquil, Ecuador",
     "phone": "+593 4 600-7200",
     "website": "https://www.tventas.com/",
-    "image": "images/resized_TVentas.png",
+    "image": "images/resized_tventas.png",
     "membershipLevel": 1,
     "category": "E-commerce"
   },
@@ -58,7 +58,7 @@
     "address": "Aeropuerto José Joaquín de Olmedo, Guayaquil, Ecuador",
     "phone": "+593 1800 003 434",
     "website": "https://www.avianca.com/es/",
-    "image": "images/resized_Avianca.png",
+    "image": "images/resized_avianca.png",
     "membershipLevel": 3,
     "category": "Airline"
   }
