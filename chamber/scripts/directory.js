@@ -3,6 +3,13 @@ const container = document.getElementById("members-container");
 const gridBtn = document.getElementById("grid-btn");
 const listBtn = document.getElementById("list-btn");
 
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
 async function getMembers() {
   try {
     const response = await fetch(url);
