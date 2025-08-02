@@ -1,0 +1,89 @@
+.spotlights{
+  margin-top: 1rem;
+}
+
+.spotlight-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.spotlight-card {
+  background: #ddd;
+  border-radius: 6px;
+  width: 300px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-header {
+  border-bottom: 1px solid #aaa;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-header .tagline {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-body img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 1px solid #999;
+  background: #aaa;
+}
+
+.card-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.card-info a {
+  color: #333;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  .spotlight-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spotlight-card {
+    width: 90%;
+  }
+
+  .card-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-body img {
+    margin: 0 0 1rem 0;
+  }
+
+  .card-info p,
+  .card-info a {
+    text-align: center;
+  }
+}

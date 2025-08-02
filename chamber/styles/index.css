@@ -96,7 +96,7 @@
 
 /* <----------------header end--------------------> */
 
-/* <----------------Part 1--------------------> */
+/* <----------------Hero--------------------> */
 
 .hero {
   height: 100vh;
@@ -146,150 +146,15 @@
     color: var(--primary-color);
 }
 
-/* <----------------Part 1 end--------------------> */
+/* <----------------Hero end--------------------> */
 
-/* <----------------Part 2--------------------> */
+/* <----------------New--------------------> */
 
-.featured-services {
-  padding: 30px;
-  max-width: 1200px;
-  margin: auto;
+.separador{
+  margin: 1rem;
 }
 
-.featured-services h2 {
-  color: var(--primary-color);
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-  display: flex;
-  align-items: flex-end;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-.card-content {
-  width: 100%;
-}
-
-.card-title {
-  font-weight: bold;
-  font-size: 16px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 10px;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.card-description {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  font-size: 14px;
-  margin-top: 8px;
-  line-height: 1.4;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 10px;
-  border-radius: 4px;
-}
-
-.card:hover .card-description {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.card.wide {
-  grid-column: span 3;
-  height: 200px;
-}
-
-@media (max-width: 768px) {
-  .card.wide {
-    grid-column: span 1;
-  }
-}
-
-/* <----------------Part 2 end--------------------> */
-
-/* <----------------Part 3--------------------> */
-
-.arbitraje {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
-    padding: 40px;
-    color: var(--secondary-color);
-}
-
-.imagen img {
-    width: 700px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.contenido {
-    max-width: 500px;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.boton {
-    display: inline-block;
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.boton:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-@media (max-width: 768px) {
-    .arbitraje {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .imagen img {
-        width: 100%;
-    }
-}
-
-/* <----------------Part 3 end--------------------> */
+/* <----------------New end--------------------> */
 
 /* <----------------Footer--------------------> */
 

@@ -12,6 +12,8 @@
     <meta property="og:image" content="https://erickbravo95.github.io/wdd231/chamber/images/gye_camara_980x420.jpg"/>
     <meta property="og:url" content="https://erickbravo95.github.io/wdd231/chamber/index.html"/>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/weather.css" />
+    <link rel="stylesheet" href="styles/spotlight.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -54,60 +56,46 @@
                 </div>
             </section>
             
-            <section class="featured-services">
-                <h2>Featured Services</h2>
-                <div class="grid-container">
-                    
-                    <div class="card" style="background-image: url('images/asesoria_comercio.jpg')">
-                    <div class="card-content">
-                        <span class="card-title">Foreign Trade and Customs Consulting</span>
-                        <p class="card-description">
-                        The CCG provides its members with advice on all matters related to foreign trade: markets, statistics, requirements, and more.
-                        </p>
-                    </div>
-                    </div>
+            <div class="separador">
 
-                    <div class="card" style="background-image: url('images/asesoria_legal.jpg')">
-                    <div class="card-content">
-                        <span class="card-title">Legal Advice</span>
-                        <p class="card-description">
-                        Free advice on labor, contractual, and corporate matters to help our clients.
-                        </p>
-                    </div>
-                    </div>
+            <h1 class="home_title">Home</h1>
+            <div class="container">
+                <section class="events">
+                <h2>Events</h2>
+                <div class="content">
+                    <article class="event">
+                    <h3>Trade and Investment Forum 2025</h3>
+                    <p>Date: August 15, 2025</p>
+                    <p>Location: Guayaquil Convention Center</p>
+                    <p>Join local and international business leaders to explore opportunities in Ecuador's booming export sectors.</p>
+                    </article>
 
-                    <div class="card" style="background-image: url('images/tramites_multilegales.jpg')">
-                    <div class="card-content">
-                        <span class="card-title">Multilegal Procedures</span>
-                        <p class="card-description">
-                        We offer services for multi-legal procedures such as company formation and dissolution, trademark registration, capital increases, and more.
-                        </p>
-                    </div>
-                    </div>
-
-                    <div class="card wide" style="background-image: url('images/business_center.jpg')">
-                    <div class="card-content">
-                        <span class="card-title">Business Center</span>
-                        <p class="card-description">
-                        Event rooms and an auditorium for meetings, interviews, discussions, and training. All in one location in Guayaquil.
-                        </p>
-                    </div>
-                    </div>
-
+                    <article class="event">
+                    <h3>Chamber Networking Breakfast</h3>
+                    <p>Date: August 28, 2025</p>
+                    <p>Location: Cámara de Comercio Auditorium</p>
+                    <p>A chance to connect with fellow entrepreneurs, exchange ideas, and promote your brand.</p>
+                    </article>
                 </div>
+                </section>
+
+                <section class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info" id="current-weather"></div>
+                </section>
+
+                <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <ul id="forecast-list"></ul>
+                </section>
+            </div>
+
+
+            <section class="spotlights">
+                <div class="spotlight-cards" id="spotlight-container"></div>
             </section>
 
-            <section class="arbitraje">
-                <div class="imagen">
-                    <img src="images/centro_arbitraje.jpg" alt="Personas en reunión de conciliación">
-                </div>
-                <div class="contenido">
-                    <h1>Arbitration and Conciliation Center</h1>
-                    <p>It is dedicated to the settlement of differences using alternative mechanisms such as mediation and arbitration.</p>
-                    <a href="discover.html" class="boton">See more</a>
-                </div>
-            </section>
-
+            </div>
                 
         </main>
 
@@ -156,6 +144,8 @@
 
 </body>
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js"defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
 </html>
