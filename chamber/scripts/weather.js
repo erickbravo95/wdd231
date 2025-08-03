@@ -51,7 +51,7 @@ function displayForecast(data) {
   forecastList.innerHTML = "";
 
   const daily = data.list.filter(entry => entry.dt_txt.includes("12:00:00"));
-  const days = ["Today", "Wednesday", "Thursday"]; // puedes personalizar los nombres
+  const days = ["Today", "Wednesday", "Thursday"];
 
   daily.slice(0, 3).forEach((entry, i) => {
     const li = document.createElement("li");
