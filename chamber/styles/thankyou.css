@@ -105,7 +105,7 @@ h1{
 }
 
 .separador{
-  margin: 10rem;
+  margin: 15rem 1rem 10rem 1rem;
 }  
 
 .wrap{
@@ -149,6 +149,43 @@ dt{ color:#555; }
   background:#cfcfcf;
 }
 
+/* wrap long values like emails/phones on all screens */
+dd{
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* -------- Phone fixes (≤600px) -------- */
+@media (max-width: 600px){
+  /* stack label/value */
+  dl{
+    grid-template-columns: 1fr;  /* one column */
+    gap: 6px 0;
+  }
+  dt{
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  dd{ margin: 0 0 6px 0; }
+
+  /* make card full width and comfy */
+  .card{
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* tidy headings on small screens */
+  h1{
+    font-size: clamp(22px, 6vw, 34px);
+    line-height: 1.15;
+  }
+
+  /* full-width Back button on mobile */
+  .btn-back{
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 /* <----------------ty Form end--------------------> */
