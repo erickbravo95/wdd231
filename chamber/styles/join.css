@@ -1,0 +1,387 @@
+    :root{
+    --primary-color: #1C3156   ;
+    --secondary-color: #FFFFFF ;
+
+    --heading-font: "DM Serif Display";
+    --paragraph-font: "Inter";
+}
+
+*{
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: var(--paragraph-font);
+}
+
+/* <----------------header--------------------> */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-left img {
+  height: 80px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.active::before{
+    content:"📈";
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: block;
+  }
+}
+
+
+/* <----------------header end--------------------> */
+
+/* <----------------Form--------------------> */
+
+  .separador{
+    margin: 7rem 1rem 1rem 1rem;
+  }
+  
+  .separador h1{
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .separador h2{
+    margin: 0 0 1rem 0;
+  }
+
+  .wrap{
+    max-width:1100px;
+    margin:0 auto;
+    padding:16px;
+  }
+  
+  .layout{
+    display:grid;
+    gap:16px;
+  }
+  
+  @media(min-width:900px){
+    .layout{
+      grid-template-columns:2fr 1fr
+    }
+  }
+
+
+  .card{
+    background:#e1e1e1;
+    border:1px solid #999;
+    border-radius:12px;
+  }
+  .card > .pad{padding:14px}
+
+
+  form{
+    display:grid;
+    gap:10px;
+  }
+
+  .two{
+    display:grid;
+    gap:10px
+  }
+
+  @media(min-width:700px){
+    .two{
+      grid-template-columns:1fr 1fr
+    }
+  }
+
+  label{
+    display:block;
+    font-size:13px;
+    margin-bottom:4px;
+    color:#333
+  }
+
+  label > input, label > select, label > textarea{
+    display:block;
+    width:100%;
+    padding:10px;
+    border:1px solid #777;
+    border-radius:8px;
+    background:#fff
+  }
+
+  input:focus, select:focus, textarea:focus{
+    outline:2px solid #406a9e
+  }
+
+  input[type="submit"]{
+    background:#406a9e;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:10px 14px;
+    cursor:pointer
+  }
+/* <----------------Form end--------------------> */
+
+/* <----------------modals--------------------> */
+  .levels{
+    display:grid;
+    gap:12px
+  }
+
+  .level{
+    background:#cfcfcf;
+    border:1px solid #8c8c8c;
+    border-radius:14px;
+    padding:14px;
+    text-align: center;
+  }
+
+  .level a{
+     margin:1rem 0 8px 0
+  }
+
+  .level h3{
+    margin:1rem 0 8px 0
+  }
+
+  .level a{
+    display:inline-block;
+    background:#d9d9d9;
+    border:1px solid #666;
+    border-radius:6px;
+    padding:6px 10px;
+    text-decoration:none;
+    color:#111
+  }
+
+  .level{
+    opacity:0;
+    animation:fadein .6s ease forwards
+  }
+
+  .level:nth-child(1){
+    animation-delay:.05s
+  }
+
+  .level:nth-child(2){
+    animation-delay:.18s
+  }
+  
+  .level:nth-child(3){
+    animation-delay:.31s
+  }
+
+  .level:nth-child(4){
+    animation-delay:.44s
+  }
+
+  @keyframes fadein{to{opacity:1}}
+
+  dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #666;
+    border-radius: 12px;
+    padding: 0;
+    max-width: 520px;
+    background: white;
+  }
+
+  dialog ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+  dialog::backdrop{
+    background:rgba(0,0,0,.4)
+  }
+
+  .modalHead{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ccc;
+    padding:10px 12px;
+    background:#efefef;
+    border-radius:12px 12px 0 0
+  }
+
+  .modalBody{
+    padding:12px
+  }
+
+  .closeBtn{
+    background:transparent;
+    border:0;
+    font-size:20px;
+    cursor:pointer
+  }
+
+
+/* <----------------modals end--------------------> */
+
+/* <----------------Footer--------------------> */
+
+.site-footer {
+  background-color: var(--primary-color);
+  padding: 20px 10px;
+  font-size: 14px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 250px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.footer-center {
+  flex: 1 1 150px;
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-center a img {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+.footer-right p {
+  margin-bottom: 0; 
+}
+
+.footer-right .last-modified {
+  margin-top: 0;
+}
+
+
+
+/* <----------------Footer end--------------------> */
+
+/* <----------------Animation------------------------> */
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--primary-color);
+    border-right: 16px solid var(--secondary-color);
+    border-bottom: 16px solid var(--primary-color);
+    border-left: 16px solid var(--secondary-color);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+  }

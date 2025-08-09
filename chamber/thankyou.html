@@ -11,14 +11,12 @@
     <meta property="og:description" content="Discover the Cámara de Comercio de Guayaquil — promoting economic growth, business networking, and services for members including legal advice, trade consulting, and business support. Join us today!">
     <meta property="og:image" content="https://erickbravo95.github.io/wdd231/chamber/images/gye_camara_980x420.jpg"/>
     <meta property="og:url" content="https://erickbravo95.github.io/wdd231/chamber/index.html"/>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/weather.css" />
-    <link rel="stylesheet" href="styles/spotlight.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/chamber_favicon.ico">
-  <title>Chamber of Commerce of Guayaquil Home Page</title>
+  <title>Chamber of Commerce of Guayaquil Thank You Page</title>
 </head>
 
 <body onload="myFunction()">
@@ -35,69 +33,33 @@
 
             <nav class="nav-links" id="nav-links">
                 <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
                 </ul>
             </nav>
         </header>
 
 
-        <main>
-
-            <section class="hero">
-                <div class="overlay">
-                <div class="hero-content">
-                    <h1>Chamber of Commerce of Guayaquil</h1>
-                    <p>136 years promoting the growth and development of its partners.</p>
-                    <a href="join.html" class="cta-button">Become a Menber</a>
-                </div>
-                </div>
+    <main class="wrap">
+        <div class="separador">
+            <h1>Thanks for applying!</h1>
+            <p>Here is what we received (required fields):</p>
+            <section class="card">
+            <dl>
+                <dt>First Name</dt><dd id="f">—</dd>
+                <dt>Last Name</dt><dd id="l">—</dd>
+                <dt>Email</dt><dd id="e">—</dd>
+                <dt>Mobile</dt><dd id="m">—</dd>
+                <dt>Organization</dt><dd id="o">—</dd>
+                <dt>Submitted</dt><dd id="t">—</dd>
+            </dl>
+            <p><a class="btn-back" href="join.html">Back to Join</a></p>
             </section>
-            
-            <div class="separador">
+        </div>
+      </main>
 
-                <h1 class="home_title">Home</h1>
-                <div class="container">
-                    <section class="events">
-                    <h2>Events</h2>
-                    <div class="content">
-                        <article class="event">
-                        <h3>Trade and Investment Forum 2025</h3>
-                        <p>Date: August 15, 2025</p>
-                        <p>Location: Guayaquil Convention Center</p>
-                        <p>Join local and international business leaders to explore opportunities in Ecuador's booming export sectors.</p>
-                        </article>
-
-                        <article class="event">
-                        <h3>Chamber Networking Breakfast</h3>
-                        <p>Date: August 28, 2025</p>
-                        <p>Location: Cámara de Comercio Auditorium</p>
-                        <p>A chance to connect with fellow entrepreneurs, exchange ideas, and promote your brand.</p>
-                        </article>
-                    </div>
-                    </section>
-
-                    <section class="current-weather">
-                    <h2>Current Weather</h2>
-                    <div class="weather-info" id="current-weather"></div>
-                    </section>
-
-                    <section class="forecast">
-                    <h2>Weather Forecast</h2>
-                    <ul id="forecast-list"></ul>
-                    </section>
-                </div>
-
-
-                <section class="spotlights">
-                    <div class="spotlight-cards" id="spotlight-container"></div>
-                </section>
-
-            </div>
-                
-        </main>
 
         <footer class="site-footer">
             <div class="footer-container">
@@ -124,7 +86,7 @@
                 <p id="lastModified"></p>
                 </div>
             </div>
-        </footer>
+        </footer>   
 
 
     </div>    
@@ -143,9 +105,6 @@
         </script>
 
 </body>
-    <script src="scripts/index.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-
 </html>

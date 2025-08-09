@@ -1,0 +1,259 @@
+    :root{
+    --primary-color: #1C3156   ;
+    --secondary-color: #FFFFFF ;
+
+    --heading-font: "DM Serif Display";
+    --paragraph-font: "Inter";
+}
+
+*{
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: var(--paragraph-font);
+}
+
+/* <----------------header--------------------> */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-left img {
+  height: 80px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.active::before{
+    content:"📈";
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: block;
+  }
+}
+
+
+/* <----------------header end--------------------> */
+
+
+/* <----------------ty Form--------------------> */
+
+h1{
+  font-weight: 700;
+  margin: 10px 0 14px;
+}
+
+.separador{
+  margin: 10rem;
+}  
+
+.wrap{
+  max-width:1100px;    
+  margin:0 auto;
+  padding:16px;
+}
+
+main{ 
+  margin-top: 96px;
+} 
+
+.card{
+  background:#e1e1e1;      
+  border:1px solid #999;    
+  border-radius:12px;      
+  padding:14px;
+}
+
+dl{
+  display:grid;
+  grid-template-columns:160px 1fr;
+  gap:8px 12px;
+  margin:0;       
+}
+
+dt{ color:#555; }
+
+.btn-back{
+  display:inline-block;
+  background:#d9d9d9;
+  border:1px solid #666;
+  border-radius:6px;
+  padding:6px 10px;
+  text-decoration:none;
+  color:#111;
+  margin-top:10px;
+}
+
+.btn-back:hover{
+  background:#cfcfcf;
+}
+
+
+
+/* <----------------ty Form end--------------------> */
+
+/* <----------------Footer--------------------> */
+
+.site-footer {
+  background-color: var(--primary-color);
+  padding: 20px 10px;
+  font-size: 14px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 250px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.footer-center {
+  flex: 1 1 150px;
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-center a img {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+.footer-right p {
+  margin-bottom: 0; 
+}
+
+.footer-right .last-modified {
+  margin-top: 0;
+}
+
+
+
+/* <----------------Footer end--------------------> */
+
+/* <----------------Animation------------------------> */
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--primary-color);
+    border-right: 16px solid var(--secondary-color);
+    border-bottom: 16px solid var(--primary-color);
+    border-left: 16px solid var(--secondary-color);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+  }
+
+
