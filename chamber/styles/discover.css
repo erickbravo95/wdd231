@@ -4,13 +4,14 @@
 
 --heading-font: "DM Serif Display";
 --paragraph-font: "Inter";
+background:#f9f9f9;
 }
 
 *{
-  margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 	box-sizing: border-box;
-  font-family: var(--paragraph-font);
+    font-family: var(--paragraph-font);
 }
 
 /* <----------------header--------------------> */
@@ -96,192 +97,178 @@
 
 /* <----------------header end--------------------> */
 
-/* <----------------Form--------------------> */
+/* <----------------Cards--------------------> */
 
-  .separador{
-    margin: 7rem 1rem 1rem 1rem;
-  }
-  
-  .separador h1{
-    margin: 1rem 1rem 1rem 0;
-  }
+.wrap{
+    max-width:1200px;
+    margin: 7rem auto 1rem; 
+    padding:24px
+}
+    
+header h1{
+    font-size:clamp(1.5rem,2.5vw,2.25rem);
+    margin:0 0 16px 0
+}
 
-  .separador h2{
-    margin: 0 0 1rem 0;
-  }
-
-  .wrap{
-    max-width:1100px;
-    margin:0 auto;
-    padding:16px;
-  }
-  
-  .layout{
-    display:grid;
-    gap:16px;
-  }
-  
-  @media(min-width:900px){
-    .layout{
-      grid-template-columns:2fr 1fr
-    }
-  }
-
-
-  .card{
-    background:#e1e1e1;
-    border:1px solid #999;
+.visit-banner{
+    background:#eff6ff;
+    border:1px solid #dbeafe;
+    color:#1e3a8a;
     border-radius:12px;
-  }
-  .card > .pad{padding:14px}
+    padding:12px 16px;
+    margin:8px 0 18px;
+    box-shadow:0 1px 0 rgba(0,0,0,.03)
+}
 
-
-  form{
+.cards{
     display:grid;
-    gap:10px;
-  }
+    gap:18px;
+    justify-content:center;
 
-  .two{
-    display:grid;
-    gap:10px
-  }
+}
+    
+.card{background:var(--secondary-color);border:1px solid #e5e7eb;border-radius:var(--radius);
+    box-shadow:0 1px 0 rgba(0,0,0,.04);display:grid;grid-template-columns:1fr 1.2fr;
+    grid-template-areas:
+        "figure title"
+        "figure desc"
+        "figure addr"
+        "figure cta";
+    align-items:start;padding:14px}
 
-  @media(min-width:700px){
-    .two{
-      grid-template-columns:1fr 1fr
-    }
-  }
+.card h2{
+    grid-area:title;
+    margin:6px 12px;
+    font-size:1.25rem;
+    line-height:1.2
+}
 
-  label{
-    display:block;
-    font-size:13px;
-    margin-bottom:4px;
-    color:#333
-  }
+.card figure{
+    grid-area:figure;
+    margin:0;
+    overflow:hidden;
+    border-radius:12px
+}
 
-  label > input, label > select, label > textarea{
-    display:block;
+.card figure img{
     width:100%;
-    padding:10px;
-    border:1px solid #777;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:transform 0.4s ease, filter 0.4s ease;
+}
+
+.card p{
+    grid-area:desc;
+    margin:6px 12px 8px;
+}
+
+.card address{
+    grid-area:addr;
+    margin:0 12px 10px;
+    font-style:italic;
+    color:#6b7280;
+}
+
+.card .cta{
+    grid-area:cta;
+    margin:0 12px 4px
+}
+
+.card button{
+    width:100%;
+    padding:14px 16px;
     border-radius:8px;
-    background:#fff
-  }
-
-  input:focus, select:focus, textarea:focus{
-    outline:2px solid var(--primary-color)
-  }
-
-  input[type="submit"]{
-    background: var(--primary-color);
-    color:#fff;
     border:none;
-    border-radius:8px;
-    padding:10px 14px;
+    background:var(--primary-color);
+    color:#fff;
+    font-weight:600;
     cursor:pointer
-  }
-/* <----------------Form end--------------------> */
+}
 
-/* <----------------modals--------------------> */
-  .levels{
-    display:grid;
-    gap:12px
-  }
+.card button:focus{
+    outline:3px solid #111;
+    outline-offset:2px
+}
 
-  .level{
-    background:#e1e1e1;
-    border:1px solid #8c8c8c;
-    border-radius:14px;
-    padding:14px;
-    text-align: center;
-  }
+.cards{grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d"
+  "e"
+  "f"
+  "g"
+  "h";
+}
 
-  .level a{
-     margin:1rem 0 8px 0
-  }
+#card-a{
+    grid-area:a
+}
 
-  .level h3{
-    margin:1rem 0 8px 0
-  }
+#card-b{
+    grid-area:b
+}
 
-  .level a{
-    display:inline-block;
-    background:#d9d9d9;
-    border:1px solid #666;
-    border-radius:6px;
-    padding:6px 10px;
-    text-decoration:none;
-    color:#111
-  }
+#card-c{
+    grid-area:c
+}
 
-  .level{
-    opacity:0;
-    animation:fadein .6s ease forwards
-  }
+#card-d{
+    grid-area:d
+}
 
-  .level:nth-child(1){
-    animation-delay:.05s
-  }
+#card-e{
+    grid-area:e
+}
 
-  .level:nth-child(2){
-    animation-delay:.18s
-  }
-  
-  .level:nth-child(3){
-    animation-delay:.31s
-  }
+#card-f{
+    grid-area:f
+}
 
-  .level:nth-child(4){
-    animation-delay:.44s
-  }
+#card-g{
+    grid-area:g
+}
 
-  @keyframes fadein{to{opacity:1}}
-
-  dialog {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #666;
-    border-radius: 12px;
-    padding: 0;
-    max-width: 520px;
-    background: white;
-  }
-
-  dialog ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  }
-
-  dialog::backdrop{
-    background:rgba(0,0,0,.4)
-  }
-
-  .modalHead{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:1px solid #ccc;
-    padding:10px 12px;
-    background:#efefef;
-    border-radius:12px 12px 0 0
-  }
-
-  .modalBody{
-    padding:12px
-  }
-
-  .closeBtn{
-    background:transparent;
-    border:0;
-    font-size:20px;
-    cursor:pointer
-  }
+#card-h{
+    grid-area:h
+}
 
 
-/* <----------------modals end--------------------> */
+@media (min-width:320px) and (max-width:640px){
+    .cards{grid-template-columns:1fr}
+    .card{grid-template-columns:1fr;grid-template-areas:
+     "title"
+     "figure"
+     "desc"
+     "addr"
+     "cta"}
+    .card figure img{height:200px;transform:none !important;filter:none !important;}
+}
+    
+
+@media (min-width:641px) and (max-width:1024px){
+    .cards{grid-template-columns:1fr 1fr;grid-template-areas:
+     "a b"
+     "c d"
+     "e f"
+     "g h"}
+    .card figure img:hover{transform:scale(1.05);filter:brightness(1.1);}
+}
+
+
+@media (min-width:1025px){
+    .cards{grid-template-columns:1fr 1fr;grid-template-areas:
+     "a b"
+     "c b"
+     "c d"
+     "e f"
+     "g h"}
+    .card figure img{height:220px}
+    .card figure img:hover{transform:scale(1.05);filter:brightness(1.1);}
+}
+
+/* <----------------Cards end--------------------> */
 
 /* <----------------Footer--------------------> */
 
@@ -385,3 +372,7 @@
   #myDiv {
     display: none;
   }
+
+    
+    
+    

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Malecón 2000",
+        "address": "Simón Bolívar Palacios, Guayaquil 090313",
+        "description": "Malecón 2000 is Guayaquil’s iconic waterfront promenade, stretching along the Guayas River. It combines green spaces, gardens, restaurants, historical monuments, museums, and recreational areas. It’s a gathering place for both locals and tourists, ideal for walking, enjoying river views, and attending cultural events.",
+        "image": "images/malecon2000.webp"
+    },
+    {
+        "name": "Hemiciclo de la Rotonda",
+        "address": "Provincia Libre de, Paseo de las Colonias Extranjeras 100 y, Guayaquil 090103",
+        "description": "This semicircular monument commemorates the historic 1822 meeting between Simón Bolívar and José de San Martín. Surrounded by sculptures and reliefs depicting key moments in Latin America’s independence, it’s a symbol of continental unity and one of the most photographed spots along Malecón 2000.",
+        "image": "images/hemiciclo_rotonda.webp"
+    },
+    {
+        "name": "Las 444 Escaleras",
+        "address": "Escalinata 'Diego Noboa y Arteta' 10, Callejón Del Tesoro 291, Guayaquil 090313",
+        "description": "Located in the traditional Cerro Santa Ana neighborhood, these famous stairs take visitors to the top of the hill through 444 colorful steps. Along the way, you’ll find bright colonial-style houses, bars, cafés, art galleries, and viewpoints offering stunning panoramas of the river and the city.",
+        "image": "images/las_444_escaleras.webp"
+    },
+    {
+        "name": "Museo de Arte Contemporáneo (MAAC)",
+        "address": "Simón Bolívar Palacios 206, Guayaquil 090313",
+        "description": "This modern museum houses both permanent and temporary exhibitions of contemporary art, as well as a valuable pre-Columbian archaeological collection. Located on the riverfront within Malecón 2000, it’s an important cultural center hosting art shows, workshops, and conferences.",
+        "image": "images/maac.webp"
+    },
+    {
+        "name": "Guayaquil Municipal Museum",
+        "address": "R438+JXJ, Calle Sucre between Calle Chile and Calle Pedro Carbo",
+        "description": "Founded in 1909, this museum offers a journey through the history of Guayaquil and Ecuador, from pre-Columbian civilizations to the republican era. Its halls display archaeological artifacts, colonial art, historical documents, and objects that narrate the city’s evolution.",
+        "image": "images/museo_municipal.webp"
+    },
+    {
+        "name": "San Francisco Church",
+        "address": "R459+578, Av. 9 S-E - Chile, Guayaquil 090313",
+        "description": "A Catholic church of great historical and architectural value, originally built in the 18th century and rebuilt several times. Its façade combines neoclassical and baroque elements, while its interior houses revered religious images and offers a peaceful spiritual atmosphere.",
+        "image": "images/catedral_sanfrancisco.webp"
+    },
+    {
+        "name": "Parroquia Santo Domingo de Guzmán",
+        "address": "Av. Vicente Rocafuerte Bejarano Centro, Guayaquil 090306",
+        "description": "One of the oldest churches in the city, founded by the Dominican order in the 16th century. Its colonial structure, golden altarpieces, and ornate interiors reflect the religious art of the period, making it an important cultural and spiritual landmark.",
+        "image": "images/iglesia_santodomingo.webp"
+    },
+    {
+        "name": "Guayaquil Town Hall (Palacio Municipal)",
+        "address": "Pichincha 605 between Clemente Ballén",
+        "description": "An imposing neoclassical building that serves as the headquarters of Guayaquil’s municipal government. Its façade features columns and decorative details, while inside it hosts administrative functions and official ceremonies. It’s an architectural icon that represents the city’s civic importance.",
+        "image": "images/palacio_municipal.webp"
+    }
+]
