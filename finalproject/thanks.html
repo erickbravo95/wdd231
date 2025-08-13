@@ -1,20 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Menu • Sabor Mexicano</title>
-<meta name="description" content="Explore more than fifteen dishes with prices, region, and spice level.">
-<meta name="author" content="Erick Bravo">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<meta property="og:title" content="Menu • Sabor Mexicano">
-<meta property="og:description" content="Explore more than fifteen dishes with prices, region, and spice level.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/og-cover.png">
-<meta property="og:url" content="">
-<link rel="stylesheet" href="styles/styles.css">
-<script type="module" src="scripts/app.js" defer></script>
-
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡Gracias! • Sabor Mexicano</title>
+  <meta name="description" content="Confirmación de reserva en Sabor Mexicano.">
+  <meta name="author" content="Erick Bravo">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module">
+    const params = new URLSearchParams(location.search);
+    const out = document.getElementById('out');
+    out.innerHTML = [...params.entries()].map(([k,v]) => `<p><strong>${k}:</strong> ${v}</p>`).join('');
+  </script>
 </head>
 <body>
   <header>
@@ -27,32 +24,18 @@
       <nav id="nav">
         <ul class="navlinks">
           <li><a href="index.html">Home</a></li>
-          <li><a aria-current="page" href="menu.html">Menu</a></li>
+          <li><a href="menu.html">Menu</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
+  
   <main class="container">
-    <h1>Menu</h1>
-    <p>Use the filters to find your ideal dish.</p>
-    <div class="controls">
-      <label class="sr-only" for="search">Buscar</label>
-      <input id="search" type="search" placeholder="Search dish...">
-      <label class="sr-only" for="region">Region</label>
-      <select id="region"><option value="">All regions</option></select>
-      <label class="sr-only" for="spice">Spice</label>
-      <select id="spice">
-        <option value="">Any spice</option>
-        <option value="0">Mild</option>
-        <option value="1">Medium</option>
-        <option value="2">Hot</option>
-      </select>
-    </div>
-    <section id="cards" class="grid menu" aria-live="polite"></section>
+    <h1>Thanks for your reservation!</h1>
+    <div id="out" class="card" style="padding:1rem"></div>
+    <p><a class="cta" href="index.html">Back to home</a></p>
   </main>
-
   <footer>
     <div class="container footer-grid">
       <section class="footer-brand">
@@ -73,7 +56,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Reservations & contact</a></li>
+          <li><a href="contact.html">Contact & Reservations</a></li>
         </ul>
       </nav>
 
@@ -101,14 +84,5 @@
     </div>
 
   </footer>
-
-    <dialog id="dishModal" aria-labelledby="modalTitle">
-      <div class="modal-header">
-        <h3 id="modalTitle">Details</h3>
-        <button class="iconbtn" data-close aria-label="Cerrar">✕</button>
-      </div>
-      <div class="modal-body" id="modalBody"></div>
-    </dialog>
-    
 </body>
 </html>

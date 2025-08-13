@@ -1,0 +1,21 @@
+{
+  "items": [
+    { "id": 1,  "name": "Tacos al Pastor",          "price": 9.25,  "region": "CDMX",    "spice": 2, "description": "Tortillas with marinated pork, pineapple, and cilantro.", "image": "images/tacos_pastor.webp" },
+    { "id": 2,  "name": "Pozole",                   "price": 8.90,  "region": "Veracruz","spice": 0, "description": "Hominy (cacahuazintle) soup with meat and lettuce.", "image": "images/pozole.webp" },
+    { "id": 3,  "name": "Cochinita Pibil",          "price": 10.90, "region": "Jalisco", "spice": 1, "description": "Slow-cooked pork marinated in achiote, served with red onion.", "image": "images/cochinita_pibil.webp" },
+    { "id": 4,  "name": "Enchiladas Verdes",        "price": 10.90, "region": "Jalisco", "spice": 1, "description": "Corn tortillas covered in green salsa with chicken and cheese.", "image": "images/enchiladas_verdes.webp" },
+    { "id": 5,  "name": "Mole Poblano",             "price": 11.90, "region": "Yucatán", "spice": 2, "description": "Chicken breast topped with a cacao-and-spices mole sauce.", "image": "images/mole_poblano.webp" },
+    { "id": 6,  "name": "Chiles en Nogada",         "price": 14.50, "region": "Veracruz","spice": 2, "description": "Poblano pepper stuffed and topped with walnut sauce and pomegranate.", "image": "images/chiles_nogada.webp" },
+    { "id": 7,  "name": "Tlayuda Oaxaqueña",        "price": 11.50, "region": "Veracruz","spice": 0, "description": "Large Oaxacan-style tortilla with lard spread, tasajo, and Oaxacan cheese.", "image": "images/tlayuda_oaxaqueña.webp" },
+    { "id": 8,  "name": "Tamales",                  "price": 5.80,  "region": "Jalisco", "spice": 2, "description": "Steamed corn masa with assorted fillings.", "image": "images/tamales.webp" },
+    { "id": 9,  "name": "Sopa de Lima",             "price": 6.90,  "region": "Puebla",  "spice": 0, "description": "Aromatic broth with tortilla strips and lime.", "image": "images/sopa_lima.webp" },
+    { "id": 10, "name": "Pescado a la Veracruzana", "price": 13.90, "region": "Yucatán", "spice": 0, "description": "Fish fillet with tomato, olives, and capers.", "image": "images/pescado_veracruzana.webp" },
+    { "id": 11, "name": "Quesabirria",              "price": 12.50, "region": "Yucatán", "spice": 1, "description": "Crispy tortilla filled with birria and melted cheese.", "image": "images/quesabirria.webp" },
+    { "id": 12, "name": "Chilaquiles Rojos",        "price": 9.50,  "region": "Puebla",  "spice": 1, "description": "Tortilla chips in red sauce with crema and cheese.", "image": "images/chilaquiles_rojos.webp" },
+    { "id": 13, "name": "Enmoladas",                "price": 9.90,  "region": "Oaxaca",  "spice": 1, "description": "Tortillas covered in mole sauce with chicken.", "image": "images/enmoladas.webp" },
+    { "id": 14, "name": "Aguachile",                "price": 13.90, "region": "CDMX",    "spice": 2, "description": "Shrimp in a spicy chile–lime sauce.", "image": "images/aguachile.webp" },
+    { "id": 15, "name": "Elote Preparado",          "price": 5.69,  "region": "Jalisco", "spice": 1, "description": "Corn on the cob with mayo, cheese, and chili powder.", "image": "images/elote_preparado.webp" },
+    { "id": 16, "name": "Carnitas",                 "price": 10.90, "region": "CDMX",    "spice": 2, "description": "Slow-cooked pork confit, Michoacán style.", "image": "images/carnitas.webp" },
+    { "id": 17, "name": "Arrachera",                "price": 16.90, "region": "Jalisco", "spice": 2, "description": "Marinated skirt steak with sides.", "image": "images/arrachera.webp" }
+  ]
+}
