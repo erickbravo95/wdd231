@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Menu • Sabor Mexicano</title>
-<meta name="description" content="Explore more than fifteen dishes with prices, region, and spice level.">
-<meta name="author" content="Erick Bravo">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<meta property="og:title" content="Menu • Sabor Mexicano">
-<meta property="og:description" content="Explore more than fifteen dishes with prices, region, and spice level.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="images/og-cover.png">
-<meta property="og:url" content="">
-<link rel="stylesheet" href="styles/styles.css">
-<script type="module" src="scripts/app.js" defer></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore more than fifteen dishes with prices, region, and spice level.">
+    <meta name="author" content="Erick Bravo">
+    <meta property="og:title" content="Menu • Sabor Mexicano">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore more than fifteen dishes with prices, region, and spice level.">
+    <meta property="og:image" content="https://erickbravo95.github.io/wdd231/finalproject/images/og-cover.png">
+    <meta property="og:url" content="https://erickbravo95.github.io/wdd231/finalproject/index.html">
+    <!-- Google Fonts: Yrsa (headings) + Reddit Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@400;700&family=Reddit+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>Menu • Sabor Mexicano</title>
 </head>
 <body>
   <header>
@@ -33,7 +35,7 @@
       </nav>
     </div>
   </header>
-
+  
   <main class="container">
     <h1>Menu</h1>
     <p>Use the filters to find your ideal dish.</p>
@@ -52,7 +54,7 @@
     </div>
     <section id="cards" class="grid menu" aria-live="polite"></section>
   </main>
-
+  
   <footer>
     <div class="container footer-grid">
       <section class="footer-brand">
@@ -67,7 +69,7 @@
           </a>
         </nav>
       </section>
-
+      
       <nav class="footer-links" aria-label="Enlaces rápidos">
         <h4 class="sr-only">Enlaces rápidos</h4>
         <ul>
@@ -76,7 +78,7 @@
           <li><a href="contact.html">Reservations & contact</a></li>
         </ul>
       </nav>
-
+      
       <section class="footer-info">
         <h4>Hours</h4>
         <p>Mon–Sat 11:00–22:00 • <span id="statusLocal" class="open-now"></span></p>
@@ -84,24 +86,24 @@
         <address>P.Icaza entre Garcia Avilez y Boyaca</address>
         <p><a href="tel:+598991540848">+598 99 154 0848</a> ·
           <a href="https://www.google.com/maps/place/C+1+NE+-+Francisco+Dep.+Icaza+706y,+Guayaquil+090313/@-2.19036,-79.8839547,17.75z/data=!4m6!3m5!1s0x902d6e786b424045:0x7b549fbc8c5b5d41!8m2!3d-2.1900681!4d-79.8842057!16s%2Fg%2F11frt6g0q2?entry=ttu&g_ep=EgoyMDI1MDgxMC4wIKXMDSoASAFQAw%3D%3D">Get directions</a></p>
-      </section>
-
-      <section class="footer-newsletter">
-        <h4>Offers & news</h4>
-        <form action="thanks.html" method="get" class="newsletter">
-          <label for="news-email" class="sr-only">Email address</label>
-          <input id="news-email" name="newsletter" type="email" placeholder="Tu email" required>
-          <input type="submit" value="Subscribe">
-        </form>
-      </section>
-    </div>
-
-    <div class="container footer-legal">
-      <p>© 2025 Sabor Mexicano</p>
-    </div>
-
-  </footer>
-
+        </section>
+        
+        <section class="footer-newsletter">
+          <h4>Offers & news</h4>
+          <form action="thanks.html" method="get" class="newsletter">
+            <label for="news-email" class="sr-only">Email address</label>
+            <input id="news-email" name="newsletter" type="email" placeholder="Tu email" required>
+            <input type="submit" value="Subscribe">
+          </form>
+        </section>
+      </div>
+      
+      <div class="container footer-legal">
+        <p>© 2025 Sabor Mexicano</p>
+      </div>
+      
+    </footer>
+    
     <dialog id="dishModal" aria-labelledby="modalTitle">
       <div class="modal-header">
         <h3 id="modalTitle">Details</h3>
@@ -110,5 +112,7 @@
       <div class="modal-body" id="modalBody"></div>
     </dialog>
     
-</body>
-</html>
+  </body>
+    <script type="module" src="scripts/app.js" defer></script>
+  </html>
+  
