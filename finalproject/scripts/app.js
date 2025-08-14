@@ -1,8 +1,12 @@
 import { initNav, initShortcuts } from './ui.js';
 import { loadMenu, renderMenu } from './data.js';
 import { setupModal } from './modal.js';
-initNav(); initShortcuts();
+
+initNav(); 
+initShortcuts();
+
 const cards = document.getElementById('cards');
+
 if(cards){
   const state = { search:'', region:'', spice:'', onlyFavs:false };
   const selectRegion=document.getElementById('region');
@@ -23,14 +27,14 @@ if(cards){
   })();
 }
 
-  // Muestra "Open now" según horario: Mon–Sat 11:00–22:00
-  const el = document.getElementById('statusLocal');
-  if(el){
-    const now = new Date();
-    const day = now.getDay(); // 0=Dom ... 6=Sáb
-    const hour = now.getHours() + now.getMinutes()/60;
-    const abierto = (day >= 1 && day <= 6) && (hour >= 11 && hour < 22);
-    el.textContent = abierto ? 'Open now' : 'Closed now';
-    if(!abierto) el.classList.add('closed');
-  }
+
+const el = document.getElementById('statusLocal');
+if(el){
+  const now = new Date();
+  const day = now.getDay();
+  const hour = now.getHours() + now.getMinutes()/60;
+  const abierto = (day >= 1 && day <= 6) && (hour >= 11 && hour < 22);
+  el.textContent = abierto ? 'Open now' : 'Closed now';
+  if(!abierto) el.classList.add('closed');
+}
 

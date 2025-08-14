@@ -7,6 +7,7 @@ export function initNav(){
     btn.setAttribute('aria-expanded', String(open));
   });
 }
+
 export function initShortcuts(){
   document.addEventListener('keydown', (e) => {
     if(e.key === '/' && document.getElementById('search')){ e.preventDefault(); document.getElementById('search').focus(); }

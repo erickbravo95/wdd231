@@ -4,4 +4,5 @@ export function setupModal(){
   dialog.addEventListener('click', (e) => { if(e.target === dialog) dialog.close(); });
   document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && dialog.open) dialog.close(); });
 }
+
 export function openModal(){ document.getElementById('dishModal').showModal(); }

@@ -1,10 +1,12 @@
 let MENU_CACHE = [];
+
 export async function loadMenu(){
   if(MENU_CACHE.length) return MENU_CACHE;
   const res = await fetch('data/menu.json');
   if(!res.ok) throw new Error('HTTP ' + res.status);
   const json = await res.json(); MENU_CACHE = json.items; return MENU_CACHE;
 }
+
 export function renderMenu(state){
   const container = document.getElementById('cards');
   const q=(state.search||''); const region=(state.region||''); const spice=(state.spice===''?null:Number(state.spice));
@@ -23,8 +25,11 @@ export function renderMenu(state){
     btn.addEventListener('click',(e)=>{ e.stopPropagation(); toggleFavorito(Number(btn.dataset.id)); renderMenu(state); });
   });
 }
+
 import { openModal } from './modal.js';
+
 import { toggleFavorito, isFavorito } from './storage.js';
+
 function tplCard(item){
   const price = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(item.price);
   const isFav = isFavorito(item.id);
@@ -39,6 +44,7 @@ function tplCard(item){
     <button class="${favBtnClass}" data-id="${item.id}" aria-pressed="${isFav}" aria-label="Marcar como favorito">${favChar}</button>
   </article>`;
 }
+
 function showModal(id){
   const item = MENU_CACHE.find(it=>it.id===id); if(!item) return;
   const body = document.getElementById('modalBody');
