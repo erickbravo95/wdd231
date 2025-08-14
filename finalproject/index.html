@@ -10,12 +10,13 @@
     <meta property="og:description" content="Sabor Mexicano restaurant: traditional Mexican cuisine with specials, events, and menu.">
     <meta property="og:image" content="https://erickbravo95.github.io/wdd231/finalproject/images/og-cover.png">
     <meta property="og:url" content="https://erickbravo95.github.io/wdd231/finalproject/index.html">
-    <!-- Google Fonts: Yrsa (headings) + Reddit Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@400;700&family=Reddit+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon-16.png" sizes="16x16" type="image/png">
     <title>Home • Sabor Mexicano</title>
 </head>
 <body>
@@ -36,15 +37,16 @@
     </div>
   </header>
 
-  <section class="hero">
+ 
+  <main class="container">
+    <section class="hero">
     <div class="container">
       <h1>Flavors of Mexico, made from scratch</h1>
       <p>Discover our specialties from different regions and enjoy a unique experience.</p>
       <a class="cta" href="menu.html">Ver Menu</a>
     </div>
-  </section>
+    </section>
 
-  <main class="container">
     <h2>Weekly highlights</h2>
     <div class="controls">
       <label class="sr-only" for="search">Buscar</label>
@@ -121,6 +123,7 @@
     <div class="modal-body" id="modalBody"></div>
   </dialog>
 
+  <script type="module" src="scripts/app.js"></script>
+
 </body>
-    <script type="module" src="scripts/app.js" defer></script>
 </html>
